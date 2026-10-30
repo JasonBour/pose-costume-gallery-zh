@@ -4,10 +4,14 @@
 
 **在线地址：** <https://jasonbour.github.io/pose-costume-gallery-zh/>
 
+![总览页](docs/preview-home.jpg)
+
 | 板块 | 内容 | 状态 |
 | --- | --- | --- |
 | [姿势参考库](pose/) | 288 组姿势 / 1439 张 900×1200 参考图 / 4 体系 / 5 视角 | 图片完整托管，可检索、可下载 |
 | [衣装参考库](costume/) | 1407 套无人衣装图 / 8 分类，中文说明与原站入口 | 仅中文索引页，**不托管图片** |
+
+![姿势库](docs/preview-pose.jpg)
 
 ---
 
@@ -63,7 +67,10 @@
 ├── scripts/
 │   ├── fetch_pose.py       # 并发下载器（断点续传 / 退避重试 / PNG→WebP）
 │   ├── build_pose_page.py  # 把上游单页改成本站子页
+│   ├── make_cover.py       # 生成 1200×630 分享封面
 │   └── verify.py           # 校验素材完整性
+├── docs/                   # README 预览图
+├── assets/og-cover.jpg     # 总览页分享封面
 ├── .nojekyll               # 关闭 Jekyll，避免下划线路径被吞
 ├── robots.txt
 ├── sitemap.xml
